@@ -3,6 +3,12 @@
     font-family: 'Oswald', sans-serif;
 }
 body{
+    background-image: url("https://i.pinimg.com/originals/10/98/81/1098819a9ffd707bb3884c6a521c316d.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: #79caf9;
+    max-width: 100%;
 
 }
