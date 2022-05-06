@@ -11,11 +11,13 @@ const carrinhoReducer = (state = carrinho, action) =>{
         return [...state, item]
 
         case "REMOVER_CARRINHO":
-        const {lixo} = action   
-        const remocao = state.filter((item) => (
-            item !== lixo
-        ))
-        return remocao
+        const {lixo} = action 
+        const indexRemove = state.findIndex((item) => (
+            item.name === lixo.name
+        ))  
+        const teste = [...state]
+        const remove = teste.splice(indexRemove,1)
+        return teste
 
         default:
         return state;
