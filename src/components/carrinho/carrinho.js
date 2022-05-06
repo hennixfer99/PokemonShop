@@ -6,6 +6,10 @@ function Carrinho(){
     
     const carrinho = useSelector((state) => state.carrinhoReducer)
     const setRedux = useDispatch()
+    const Totalprice = carrinho.reduce(
+        (soma1, soma2) => soma1 + Number(soma2.price),
+        0
+      );
     
    
 return (
@@ -25,6 +29,7 @@ return (
                 <button className="tirardocarrinho" onClick={() => setRedux(Remover(item))}>X</button>
             </li>))}
             </ul>
+            <p className="precofinal">Valor total:R$ {Totalprice.toFixed(2)}</p>
             <button className= "finalizar-compra"  >Finalizar compra</button>
             </div>
         

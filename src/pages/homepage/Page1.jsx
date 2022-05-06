@@ -61,14 +61,15 @@ function Homepage() {
         <button onClick={() => filtragem("cash")}>Cash</button>
         </div>
         <div className="itens-loja">
-            <ul className="ulprimaria">
               {filteredProducts.length > 0 ? (
-
+                <ul className="ulprimaria">
                 <ListagemPoke itens = {filteredProducts} />
+                </ul>
               ):(
+                <ul className="ulprimaria">
                 <ListagemPoke itens = {itens} />
-                )}
-            </ul>
+                </ul>
+                )}   
         </div>
       </main>
       <Carrinho />
