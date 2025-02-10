@@ -15,9 +15,9 @@ const carrinhoReducer = (state = carrinho, action) =>{
         const indexRemove = state.findIndex((item) => (
             item.name === lixo.name
         ))  
-        const teste = [...state]
-        const remove = teste.splice(indexRemove,1)
-        return teste
+        const novoCarrinho = [...state]
+        novoCarrinho.splice(indexRemove,1)
+        return novoCarrinho
 
         default:
         return state;

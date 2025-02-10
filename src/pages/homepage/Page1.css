@@ -1,7 +1,7 @@
 .site-body{
     display: flex;
     justify-content: space-between;
-    
+    max-width: 100%;
 }
 .logo-description {
   display: flex;
@@ -27,16 +27,6 @@
     color: red;
 }
 
-.miau {
-  max-width: 100%;
-  max-height: 100%;
-}
-.miauimg {
-  max-width: 100%;
-  width: 400px;
-  max-height: 100%;
-  
-}
 .mainpage{
     background-color: #172530;
     color: white;
@@ -100,28 +90,15 @@
         flex-wrap: nowrap;
     }
     .logo-description {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%; 
-        margin: 0 0;       
+        display: none;    
       }
-     .titulo{
-        display: none;
-    }
-    .titulo2{
-        display: none;
-    }
-    .titulo3{
-        display: none;
-    }
+    
     .site-body{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
     }
     .mainpage{
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
         font-size: 12px;
     }
     .pagseguro p{

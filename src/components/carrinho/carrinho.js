@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {Remover} from "../../store/modules/action"
 import "./carrinho.css"
@@ -23,7 +23,7 @@ return (
         {carrinho.map((item,index) => (
            
             <li key={index} className="carrinho">
-                <img src={item.img}/>
+                <img src={item.img} alt={item.name}/>
                 <h1>{item.name}</h1>
                 <p>R$ {item.price.toFixed(2)}</p>
                 <button className="tirardocarrinho" onClick={() => setRedux(Remover(item))}>X</button>
